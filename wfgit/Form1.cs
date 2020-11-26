@@ -56,7 +56,7 @@ namespace wfgit
 
            command.CommandText= "Insert into dbo.Student value('"+txtMasv.Text+"','"+txtTen.Text+"','"+txtNS.Text+"','"+txtQQ.Text+"','"+txtDT.Text+"','"+txtDL.Text+"','"+txtMaLop.Text+"')";
 
-            
+            command.ExecuteNonQuery();
           
             connection.Close();
         }
