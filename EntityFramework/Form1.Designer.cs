@@ -41,13 +41,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtmasv = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvdata)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(51, 337);
+            this.btnAdd.Location = new System.Drawing.Point(12, 337);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(75, 25);
             this.btnAdd.TabIndex = 0;
@@ -57,7 +60,7 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(155, 337);
+            this.btnEdit.Location = new System.Drawing.Point(97, 337);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(75, 25);
             this.btnEdit.TabIndex = 1;
@@ -67,7 +70,7 @@
             // 
             // btnDel
             // 
-            this.btnDel.Location = new System.Drawing.Point(279, 337);
+            this.btnDel.Location = new System.Drawing.Point(191, 337);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(75, 25);
             this.btnDel.TabIndex = 2;
@@ -77,7 +80,7 @@
             // 
             // btnShow
             // 
-            this.btnShow.Location = new System.Drawing.Point(570, 337);
+            this.btnShow.Location = new System.Drawing.Point(279, 337);
             this.btnShow.Name = "btnShow";
             this.btnShow.Size = new System.Drawing.Size(75, 25);
             this.btnShow.TabIndex = 3;
@@ -158,19 +161,48 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Mã lớp";
             // 
-            // txtmasv
+            // txtId
             // 
-            this.txtmasv.Location = new System.Drawing.Point(528, 79);
-            this.txtmasv.Name = "txtmasv";
-            this.txtmasv.Size = new System.Drawing.Size(100, 20);
-            this.txtmasv.TabIndex = 14;
+            this.txtId.Location = new System.Drawing.Point(545, 18);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(100, 20);
+            this.txtId.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(483, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 13);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Mã SV";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(454, 342);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(100, 20);
+            this.txtSearch.TabIndex = 16;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(574, 342);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(71, 20);
+            this.btnSearch.TabIndex = 17;
+            this.btnSearch.Text = "Tìm kiếm";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(674, 385);
-            this.Controls.Add(this.txtmasv);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtId);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -207,7 +239,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtmasv;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
 
