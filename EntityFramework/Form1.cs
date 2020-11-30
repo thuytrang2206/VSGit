@@ -27,7 +27,7 @@ namespace EntityFramework
             // dtgvdata.Refresh();
         }
 
-        void EditSV()
+        void EditSV() 
         {
             int id = int.Parse(dtgvdata.SelectedCells[0].OwningRow.Cells["Id"].Value.ToString());
             Student st = db.Students.Find(id);
